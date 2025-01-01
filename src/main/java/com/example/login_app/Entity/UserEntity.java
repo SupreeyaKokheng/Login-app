@@ -1,10 +1,10 @@
-package com.example.login_app.model;
+package com.example.login_app.Entity;
 
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "users")
-public class User {
+public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -15,7 +15,7 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-    // Getters and Setters
+    // Getter and Setter
     public Long getId() {
         return id;
     }
@@ -32,7 +32,7 @@ public class User {
         this.username = username;
     }
 
-    public String getPassword() {
+    public String getPassword() {  // ตรวจสอบว่ามีเมธอดนี้
         return password;
     }
 
