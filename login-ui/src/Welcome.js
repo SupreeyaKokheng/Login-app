@@ -1,12 +1,12 @@
 import React from "react";
 
-const Welcome = () => {
+function Welcome() {
     return (
-        <div>
-            <h1>Hello, Dream!</h1>
-            <p>Welcome to the application!</p>
+        <div style={{ textAlign: "center", marginTop: "100px" }}>
+            <h1>Welcome, Dream!</h1>
         </div>
     );
-};
+}
 
 export default Welcome;
+
